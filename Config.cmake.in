@@ -1,0 +1,9 @@
+@PACKAGE_INIT@
+
+include(CMakeFindDependencyMacro)
+
+include("${CMAKE_CURRENT_LIST_DIR}/@PROJECT_NAME@Targets.cmake")
+
+find_dependency(Boost REQUIRED COMPONENTS program_options)
+
+check_required_components(@PROJECT_NAME@)
