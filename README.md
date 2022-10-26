@@ -4,10 +4,12 @@ Utility package providing tools for CLI applications.
 
 ## ProgramOptions
 
-TODO: Add usage example of the ProgramOptions class (and how to link in cmake)
+`ProgramOptions` is a wrapper around
+[Boost.Program_options](https://www.boost.org/doc/libs/1_80_0/doc/html/program_options.html)
+to make it more convenient to use.  For an example see
+`src/demo_program_options.cpp`.
 
 
 ## Links
 
-- [Documentation](https://open-dynamic-robot-initiative.github.io/cli_utils/)
 - [Code on GitHub](https://github.com/open-dynamic-robot-initiative/cli_utils)

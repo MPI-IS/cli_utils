@@ -28,6 +28,13 @@ target_link_libraries(program_options PUBLIC
 )
 
 
+## Executables
+
+add_executable(demo_program_options src/demo_program_options.cpp)
+target_link_libraries(demo_program_options PUBLIC
+    program_options
+)
+
 ## Tests
 
 include(CTest)
@@ -55,6 +62,8 @@ install(DIRECTORY include/${PROJECT_NAME}/
 install(
     TARGETS
         program_options
+        demo_program_options
+
     EXPORT ${PROJECT_NAME}Targets
 )
 
